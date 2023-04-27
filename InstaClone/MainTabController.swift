@@ -25,6 +25,7 @@ class MainTabController: UITabBarController {
     
     func setupVCs() {
             viewControllers = [
+            
                 createNavController(for: FeedController(),
                                     title: NSLocalizedString("Feed", comment: ""),
                                     image: UIImage(systemName: "house")!),
@@ -55,6 +56,7 @@ class MainTabController: UITabBarController {
             let navController = UINavigationController(rootViewController: rootViewController)
             navController.tabBarItem.title = title
             navController.tabBarItem.image = image
+            let layout = UICollectionViewFlowLayout()
             //navController.navigationBar.prefersLargeTitles = true
             rootViewController.navigationItem.title = title
         

@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 
-class TabBarController: UITabBarController {
+class MainTabController: UITabBarController {
     
+    // MARK:- Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,23 +25,23 @@ class TabBarController: UITabBarController {
     
     func setupVCs() {
             viewControllers = [
-                createNavController(for: FeedViewController(),
+                createNavController(for: FeedController(),
                                     title: NSLocalizedString("Feed", comment: ""),
                                     image: UIImage(systemName: "house")!),
                 
-                createNavController(for: SearchViewController(),
+                createNavController(for: SearchController(),
                                     title: NSLocalizedString("Search", comment: ""),
                                     image: UIImage(systemName: "magnifyingglass")!),
                 
-                createNavController(for: ImageSelectorViewController(),
+                createNavController(for: ImageSelectorController(),
                                     title: NSLocalizedString("Image", comment: ""),
                                     image: UIImage(systemName: "square")!),
                 
-                createNavController(for: NotificationViewController(),
+                createNavController(for: NotificationController(),
                                     title: NSLocalizedString("Notification", comment: ""),
                                     image: UIImage(systemName: "heart")!),
                 
-                createNavController(for: ProfileViewController(),
+                createNavController(for: ProfileController(),
                                     title: NSLocalizedString("Profile", comment: ""),
                                     image: UIImage(systemName: "person")!)
             ]

@@ -13,6 +13,12 @@
 		1CEDE5A329FA2833003BA94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEDE5A129FA2833003BA94B /* Main.storyboard */; };
 		1CEDE5A529FA2835003BA94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEDE5A429FA2835003BA94B /* Assets.xcassets */; };
 		1CEDE5A829FA2835003BA94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CEDE5A629FA2835003BA94B /* LaunchScreen.storyboard */; };
+		1CEDE5B029FA28BA003BA94B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDE5AF29FA28BA003BA94B /* TabBarController.swift */; };
+		1CEDE5B829FA292D003BA94B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDE5B729FA292D003BA94B /* FeedViewController.swift */; };
+		1CEDE5BA29FA2939003BA94B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDE5B929FA2939003BA94B /* SearchViewController.swift */; };
+		1CEDE5BC29FA2945003BA94B /* ImageSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDE5BB29FA2944003BA94B /* ImageSelectorViewController.swift */; };
+		1CEDE5BE29FA295A003BA94B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDE5BD29FA295A003BA94B /* NotificationViewController.swift */; };
+		1CEDE5C029FA2963003BA94B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDE5BF29FA2963003BA94B /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1CEDE5A429FA2835003BA94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CEDE5A729FA2835003BA94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CEDE5A929FA2835003BA94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CEDE5AF29FA28BA003BA94B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1CEDE5B729FA292D003BA94B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		1CEDE5B929FA2939003BA94B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1CEDE5BB29FA2944003BA94B /* ImageSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorViewController.swift; sourceTree = "<group>"; };
+		1CEDE5BD29FA295A003BA94B /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		1CEDE5BF29FA2963003BA94B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		1CEDE59A29FA2833003BA94B /* InstaClone */ = {
 			isa = PBXGroup;
 			children = (
-				1CEDE59B29FA2833003BA94B /* AppDelegate.swift */,
-				1CEDE59D29FA2833003BA94B /* SceneDelegate.swift */,
+				1CEDE5C129FA298E003BA94B /* appdelegates */,
+				1CEDE5B629FA2907003BA94B /* model */,
+				1CEDE5B529FA2901003BA94B /* utils */,
+				1CEDE5B429FA28FB003BA94B /* api */,
+				1CEDE5B329FA28F3003BA94B /* viewModel */,
+				1CEDE5B229FA28EC003BA94B /* views */,
+				1CEDE5B129FA28E0003BA94B /* controller */,
 				1CEDE59F29FA2833003BA94B /* ViewController.swift */,
+				1CEDE5AF29FA28BA003BA94B /* TabBarController.swift */,
 				1CEDE5A129FA2833003BA94B /* Main.storyboard */,
 				1CEDE5A429FA2835003BA94B /* Assets.xcassets */,
 				1CEDE5A629FA2835003BA94B /* LaunchScreen.storyboard */,
 				1CEDE5A929FA2835003BA94B /* Info.plist */,
 			);
 			path = InstaClone;
+			sourceTree = "<group>";
+		};
+		1CEDE5B129FA28E0003BA94B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDE5B729FA292D003BA94B /* FeedViewController.swift */,
+				1CEDE5B929FA2939003BA94B /* SearchViewController.swift */,
+				1CEDE5BB29FA2944003BA94B /* ImageSelectorViewController.swift */,
+				1CEDE5BD29FA295A003BA94B /* NotificationViewController.swift */,
+				1CEDE5BF29FA2963003BA94B /* ProfileViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		1CEDE5B229FA28EC003BA94B /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1CEDE5B329FA28F3003BA94B /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		1CEDE5B429FA28FB003BA94B /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		1CEDE5B529FA2901003BA94B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		1CEDE5B629FA2907003BA94B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1CEDE5C129FA298E003BA94B /* appdelegates */ = {
+			isa = PBXGroup;
+			children = (
+				1CEDE59B29FA2833003BA94B /* AppDelegate.swift */,
+				1CEDE59D29FA2833003BA94B /* SceneDelegate.swift */,
+			);
+			path = appdelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEDE5BA29FA2939003BA94B /* SearchViewController.swift in Sources */,
 				1CEDE5A029FA2833003BA94B /* ViewController.swift in Sources */,
+				1CEDE5BE29FA295A003BA94B /* NotificationViewController.swift in Sources */,
 				1CEDE59C29FA2833003BA94B /* AppDelegate.swift in Sources */,
+				1CEDE5B829FA292D003BA94B /* FeedViewController.swift in Sources */,
+				1CEDE5BC29FA2945003BA94B /* ImageSelectorViewController.swift in Sources */,
+				1CEDE5C029FA2963003BA94B /* ProfileViewController.swift in Sources */,
 				1CEDE59E29FA2833003BA94B /* SceneDelegate.swift in Sources */,
+				1CEDE5B029FA28BA003BA94B /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

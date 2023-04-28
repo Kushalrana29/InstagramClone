@@ -53,7 +53,7 @@ struct RegistrationViewModel: AuthenticationViewModel {
     
     var buttonBackgroundColor: UIColor{
         
-        var btnColor = UIColor(red: 160/255, green: 87/255, blue: 215/255, alpha: 1)
+        let btnColor = UIColor(red: 160/255, green: 87/255, blue: 215/255, alpha: 1)
         
         return formIsValid ? btnColor  : .systemBlue.withAlphaComponent(0.5)
         
